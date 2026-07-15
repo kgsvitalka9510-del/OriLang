@@ -1,0 +1,12 @@
+// factorial.ori - Factorial calculation sample
+// Calculates factorial of a number using loop
+
+hold n = 10
+hold result = 1
+hold i = 1
+
+when i <= n
+    hold result = result * i
+    hold i = i + 1
+
+say "Factorial of " + n + " = " + result
