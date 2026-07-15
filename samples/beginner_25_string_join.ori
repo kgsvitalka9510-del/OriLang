@@ -1,0 +1,21 @@
+// string_join.ori - String joining sample
+// Demonstrates string concatenation and join operations
+
+hold first = "Hello"
+hold second = "World"
+hold greeting = first + " " + second
+
+say greeting
+
+// Build a list and join
+hold parts = ["Python", "is", "awesome"]
+hold sentence = ""
+hold i = 0
+
+when i < 3
+    when i > 0
+        hold sentence = sentence + " "
+    hold sentence = sentence + parts[i]
+    hold i = i + 1
+
+say sentence
