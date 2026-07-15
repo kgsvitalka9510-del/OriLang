@@ -1,0 +1,18 @@
+// fizzbuzz.ori - FizzBuzz sample for OriLang
+// Prints numbers 1-100, replacing multiples of 3 with "Fizz" and 5 with "Buzz"
+
+hold i = 1
+when i <= 100
+    hold mod3 = i % 3
+    hold mod5 = i % 5
+    
+    when mod3 == 0 and mod5 == 0
+        say "FizzBuzz"
+    when mod3 == 0
+        say "Fizz"
+    when mod5 == 0
+        say "Buzz"
+    otherwise
+        say i
+    
+    hold i = i + 1
